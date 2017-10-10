@@ -1,0 +1,58 @@
+@media only screen {
+
+     html { font-size: 26px; } 
+    .text{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
+    html { font-size: 22px; } 
+    .text{
+        margin-top: 10%;
+        margin-bottom: 10%;
+   }
+}
+@media only screen and (max-width: 479px) and (min-width: 321px) {
+     html { font-size: 18px; }
+     .text{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+@media only screen and (max-width: 320px) { 
+    html { font-size: 13px; } 
+    .text{
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+}
+body{
+    background-color: #68cdd5;
+    color: white;
+}
+p{
+    /* color: white; */
+    font-size:1rem; 
+}
+img{
+    display: block
+}
+.text{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.mark{
+    text-align: center;
+}
+.markLeft{
+    float: left;
+    margin-left: 5%;
+}
+.markRight{
+    float: right;
+    margin-right: 5%;
+}
+.logo{
+    margin: 10% auto
+}
