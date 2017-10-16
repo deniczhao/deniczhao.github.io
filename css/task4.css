@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    margin: 0px;
+}
+
+body {
+    background-color: #eff0f4
+}
+
+header {
+
+    width: 100%;
+    height: 50px;
+    background-color: #5fc0cd;
+    color: white;
+    margin-bottom: 10px
+}
+input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+input:focus {
+    outline: none;
+    border: none
+}
+
+img {
+    height: 100%
+}
+a{
+    font-size: 14px;
+    color: #5fc0cd;
+    float: right;
+    margin: 10px;
+}
+.handerBox {
+
+    width: 33%;
+    float: left;
+}
+
+.register {
+    padding: 10px
+}
+
+.login {
+    padding: 10px;
+    text-align: center;
+}
+
+.close {
+    padding: 10px;
+    text-align: right
+}
+
+.formBox {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 100%;
+    height: 25px;
+    background-color: #5fc0cd;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.imgBox {
+    height: 60%;
+    margin: 10px;
+    width: 30px;
+    float: left;
+    border-right: 1px solid gainsboro
+}
+
+.inputbox {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    /* float: left; */
+    overflow: hidden;
+}
+
