@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <title>Task5</title>
     <style>
-        html,body{
+        html,
+        body {
             width: 100%;
             height: 100%;
-            margin:0;
+            margin: 0;
         }
-    header{
-        background-color: #5fc0cd;
-        height: 60px;
-        width: 100%;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-    }
-    .backArrow{
-        margin: 5px
-    }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #5fc0cd;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-size: border;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        .backArrow {
+            position: absolute;
+            left: 0px;
+            margin-left: 5px;
+        }
+
+        .cardHead {
+            height: 200px;
+            width: 100%;
+            background-image: url('./images/Task5_3.png');
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+        }
+        .headportrait{
+            width:100px;
+float: left;
+margin:0 20px
+        }
+        .nameBox{
+            float: left;
+        }
+        .nameBox p:first-child{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 0px;
+            font-style: border;
+            
+
+            
+            
+        }
+        .nameBox p:last-child{
+            color: white;
+            margin-top: 5px
+        }
     </style>
 </head>
+
 <body>
     <header>
         <img src="./images/Task5_1.png" alt="" class="backArrow">
+
+        <div>个人主页</div>
     </header>
-    12 <br>
-    32 <br>
-    56
+    <main>
+        <div class="cardHead">
+            <div>
+                <img src="./images/Task5_5.png" alt="" class="headportrait">
+                <div class="nameBox">
+                    <p>
+                        徐树林 55岁
+                    </p>
+                    <p>
+                        <img src="./images/Task5_4.png" alt="" style="height:15px">
+                        京城·四方
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        2
+    </footer>
 </body>
+
 </html>
