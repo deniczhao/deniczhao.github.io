@@ -10,40 +10,282 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
-        .cl1 {
-            width: 160px;
+        .heard {
+            padding-top: 5px;
+            background-color: #5fc0cd;
+            height: 50px;
+        }
+
+        .switch {
+            width: 150px;
             height: 40px;
             border-radius: 5px;
             background-color: #55a8b3;
             color: white;
             font-size: 20px;
+
         }
 
-        .cl2 {
+        .switch-button-off {
+            float: left;
+            margin: 5px;
+            margin-left: 15px;
+        }
+
+        .switch-button-on {
             float: right;
-            width: 80px;
+            width: 75px;
             height: 40px;
             border-radius: 5px;
             background-color: white;
             color: #5fc0cd;
             font-size: 20px;
-            padding:5px
+            padding: 5px
         }
+
+        .task6_mark {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            height: 45px;
+            width: 45px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -7px -4px no-repeat;
+            transform: scale(0.6, 0.6);
+        }
+
+        .task6_home {
+            height: 40px;
+            width: 46px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -159px -8px no-repeat;
+            transform: scale(0.6, 0.6);
+        }
+
+        .task6_person {
+            height: 41px;
+            width: 42px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -107px -7px no-repeat;
+            transform: scale(0.6, 0.6);
+
+        }
+
+        .centercircle {
+            height: 60PX;
+            width: 60px;
+            border-radius: 30px;
+            background-color: #5fc0cd;
+            overflow: hidden;
+        }
+
+        .task6_write {
+            height: 41px;
+            width: 40px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -59px -7px no-repeat;
+            margin-top: 10px;
+            transform: scale(0.6, 0.6);
+        }
+
+
+        /**/
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .select-container input {
+            display: none
+        }
+
+        /**/
+
+        .select-container {
+            position: relative;
+            height: 30px;
+        }
+
+        .select-container:hover {
+            z-index: 9999;
+        }
+
+
+
+        .options {
+            position: absolute;
+            height: 30px;
+            width: 100%;
+            overflow: hidden;
+            transition: 0.7s;
+        }
+
+        .options:hover {
+            height: 100em;
+        }
+
+        .toggle {
+            height: 30px;
+            width: 100%;
+        }
+
+        .options label {
+            width: 100%;
+            margin-bottom: 0px;
+            background: rgb(14, 117, 158);
+            padding: 10px 0px
+        }
+
+        .options input:checked~label {
+
+            background: skyblue;
+
+        }
+
+        /* .radio-options .toggle {
+            position: relative;
+            cursor: pointer;
+            padding: 0.75em;
+            background: darkgreen;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+ 
+
+        .radio-options li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .radio-options label {
+            display: block;
+            opacity: 0;
+            transition: 0s;
+        }
+
+        .radio-options input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 3em;
+            opacity: 0;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .radio-options:hover li {
+            position: relative;
+        }
+
+        .radio-options:hover label {
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .radio-options input:checked~label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 1;
+  
+            z-index: 2;
+        
+            padding: 0.75em;
+            background: darkgreen;
+            border-radius: 10px;
+        }
+
+        .radio-options:hover input:checked~label {
+            position: static;
+            border-radius: 0;
+        } */
     </style>
 </head>
 
 <body>
-    <div style="background-color:#5fc0cd;height:80px">
-        <div class="cl1">
-            <div style="float:left;margin:5px">
-                    找雇主
+    <nav class="navbar navbar-fixed-top">
+        <!-- 找雇主 找护工-->
+        <center class="heard">
+            <div class="switch">
+                <div class="switch-button-off">
+                    123
+                </div>
+                <div class="switch-button-on">
+                    321
+                </div>
             </div>
-            
-            <div class="cl2">找护工</div>
-        </div>
-    </div>
 
+        </center>
+        <div class="task6_mark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4">
+
+                    <fieldset class="select-container">
+                        <div class="options">
+                            <div class="toggle">请选择</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="my-beer" id="choice1" value="choice1">
+                                    <label for="choice1">1</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="my-beer" id="choice2" value="choice2">
+                                    <label for="choice2">2</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="my-beer" id="choice3" value="choice3">
+                                    <label for="choice3">3</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="my-beer" id="choice4" value="choice4">
+                                    <label for="choice4">4</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="col-xs-4 col-sm-4">2</div>
+                <div class="col-xs-4 col-sm-4">3</div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                    <div style="float:right;text-align: center">
+                        <div class="task6_home"></div>
+                        首页
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4">
+                    <center>
+                        <div class="centercircle ">
+                            <div class="task6_write"></div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-xs-4 col-sm-4">
+                    <div style="float:left;text-align: center">
+                        <div class="task6_person"></div>
+                        我的
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>

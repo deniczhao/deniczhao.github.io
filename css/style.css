@@ -1,0 +1,128 @@
+#gopng_task6_mark_outer {
+height: 44px;
+width: 42px;
+overflow: hidden;
+}
+.gopng_task6_mark {
+background: url('/images/Task6_sprite.png') -7px -4px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 7px;
+_margin-left: -7px;
+_padding-top: 4px;
+_margin-top: -4px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_write_outer {
+height: 41px;
+width: 40px;
+overflow: hidden;
+}
+#gopng_task6_write {
+background: url('../images/Task6_sprite.png') -59px -7px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 59px;
+_margin-left: -59px;
+_padding-top: 7px;
+_margin-top: -7px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_person_outer {
+height: 41px;
+width: 42px;
+overflow: hidden;
+}
+#gopng_task6_person {
+background: url('/images/Task6_sprite.png') -107px -7px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 107px;
+_margin-left: -107px;
+_padding-top: 7px;
+_margin-top: -7px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_home_outer {
+height: 40px;
+width: 46px;
+overflow: hidden;
+}
+#gopng_task6_home {
+background: url('/images/Task6_sprite.png') -159px -8px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 159px;
+_margin-left: -159px;
+_padding-top: 8px;
+_margin-top: -8px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_arrow_outer {
+height: 33px;
+width: 19px;
+overflow: hidden;
+}
+#gopng_task6_arrow {
+background: url('/images/Task6_sprite.png') -219px -15px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 219px;
+_margin-left: -219px;
+_padding-top: 15px;
+_margin-top: -15px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_calendar_outer {
+height: 24px;
+width: 24px;
+overflow: hidden;
+}
+#gopng_task6_calendar {
+background: url('/images/Task6_sprite.png') -253px -17px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 253px;
+_margin-left: -253px;
+_padding-top: 17px;
+_margin-top: -17px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_shape_outer {
+height: 23px;
+width: 19px;
+overflow: hidden;
+}
+#gopng_task6_shape {
+background: url('/images/Task6_sprite.png') -291px -18px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 291px;
+_margin-left: -291px;
+_padding-top: 18px;
+_margin-top: -18px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_task6_downarrow_outer {
+height: 8px;
+width: 13px;
+overflow: hidden;
+}
+#gopng_task6_downarrow {
+background: url('/images/Task6_sprite.png') -320px -17px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 320px;
+_margin-left: -320px;
+_padding-top: 17px;
+_margin-top: -17px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
