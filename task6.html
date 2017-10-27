@@ -12,6 +12,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%
+        }
+
         .heard {
             padding-top: 5px;
             background-color: #5fc0cd;
@@ -90,124 +96,98 @@
             transform: scale(0.6, 0.6);
         }
 
-
-        /**/
-
         ul {
             list-style: none;
             padding: 0;
         }
 
-        .select-container input {
-            display: none
-        }
-
-        /**/
-
-        .select-container {
-            position: relative;
-            height: 30px;
-        }
-
-        .select-container:hover {
-            z-index: 9999;
-        }
-
-
-
-        .options {
-            position: absolute;
-            height: 30px;
+        .select>li {
+            float: left;
             width: 100%;
-            overflow: hidden;
-            transition: 0.7s;
-        }
-
-        .options:hover {
-            height: 100em;
-        }
-
-        .toggle {
-            height: 30px;
-            width: 100%;
-        }
-
-        .options label {
-            width: 100%;
-            margin-bottom: 0px;
-            background: rgb(14, 117, 158);
-            padding: 10px 0px
-        }
-
-        .options input:checked~label {
-
-            background: skyblue;
 
         }
 
-        /* .radio-options .toggle {
-            position: relative;
-            cursor: pointer;
-            padding: 0.75em;
-            background: darkgreen;
-            border-radius: 10px;
-            z-index: 1;
-        }
-
- 
-
-        .radio-options li {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .radio-options label {
+        ul a {
             display: block;
-            opacity: 0;
-            transition: 0s;
+            text-decoration: none;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #999999;
+            background-color: white;
+            border-bottom: 1px solid #e1e5e7;
+            border-right: 1px solid #e1e5e7;
+            border-left: 1px solid #e1e5e7;
         }
 
-        .radio-options input {
+        ul a:hover {
+            text-decoration: none;
+            color: #999999;
+        }
+
+
+
+        .drop-down-content {
+            padding: 0;
+            display: none;
+            /*position: absolute;*/
+        }
+
+        .drop-down-content li:hover a {
+            background-color: gainsboro;
+        }
+
+        .select .drop-down:hover .drop-down-content {
+            display: block;
+        }
+
+        .select-down {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid #afbac0;
+
+            float: right;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 300px;
-            height: 3em;
-            opacity: 0;
-            z-index: 1;
-            cursor: pointer;
+            right: 20px;
+            top: 22px;
         }
 
-        .radio-options:hover li {
-            position: relative;
-        }
-
-        .radio-options:hover label {
-            opacity: 1;
-            transition: 0.5s;
-        }
-
-        .radio-options input:checked~label {
+        .main {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            opacity: 1;
-  
-            z-index: 2;
-        
-            padding: 0.75em;
-            background: darkgreen;
-            border-radius: 10px;
+            height: calc(100% - 160px);
+            top: 100px;
+            width: 100%;
+overflow-x:auto;
         }
 
-        .radio-options:hover input:checked~label {
-            position: static;
-            border-radius: 0;
-        } */
+        .mainrow {
+
+            height: 90px;
+            border-bottom: 1px solid #e1e5e7;
+        }
+
+        .mainTitle {
+            color: #999999;
+            margin-left: 10px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .mainMess {
+            color: black;
+            margin-left: 40px;
+            height: 30px;
+            line-height: 30px;
+        }.mainMessL{
+            float: left;
+        }
+        .mainMessR{
+            float: right;
+            color: red;
+        }
     </style>
 </head>
 
@@ -228,39 +208,106 @@
         <div class="task6_mark"></div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 col-sm-4">
-
-                    <fieldset class="select-container">
-                        <div class="options">
-                            <div class="toggle">请选择</div>
-                            <ul>
+                <div class="col-xs-4 col-sm-4" style="padding:0">
+                    <ul class="select">
+                        <li class="drop-down">
+                            <a href="#">所在地
+                                <div class="select-down"></div>
+                            </a>
+                            <ul class="drop-down-content">
                                 <li>
-                                    <input type="radio" name="my-beer" id="choice1" value="choice1">
-                                    <label for="choice1">1</label>
+                                    <a href="#">1</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="my-beer" id="choice2" value="choice2">
-                                    <label for="choice2">2</label>
+                                    <a href="#">2</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="my-beer" id="choice3" value="choice3">
-                                    <label for="choice3">3</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="my-beer" id="choice4" value="choice4">
-                                    <label for="choice4">4</label>
+                                    <a href="#">3</a>
                                 </li>
                             </ul>
-                        </div>
-                    </fieldset>
+                        </li>
+                    </ul>
 
                 </div>
-                <div class="col-xs-4 col-sm-4">2</div>
-                <div class="col-xs-4 col-sm-4">3</div>
+                <div class="col-xs-4 col-sm-4" style="padding:0">
+                    <ul class="select">
+                        <li class="drop-down">
+                            <a href="#">食宿
+                                <div class="select-down"></div>
+                            </a>
+                            <ul class="drop-down-content">
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-sm-4" style="padding:0">
+                    <ul class="select">
+                        <li class="drop-down">
+                            <a href="#">病人情况
+                                <div class="select-down"></div>
+                            </a>
+                            <ul class="drop-down-content">
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-
+    <div class="main">
+        <div class="mainrow">
+            <div class="mainTitle">
+                服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div><div class="mainMessR">
+                    25 元/小时
+                </div>
+            </div>
+            <div class="mainTitle">
+                北京·通州·果园
+            </div>
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+        <div class="mainrow">
+            1
+        </div>
+    </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
             <div class="row">
