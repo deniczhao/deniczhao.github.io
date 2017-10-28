@@ -10,185 +10,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%
-        }
+    <link rel="stylesheet" href="./css/task6.css">
 
-        .heard {
-            padding-top: 5px;
-            background-color: #5fc0cd;
-            height: 50px;
-        }
-
-        .switch {
-            width: 150px;
-            height: 40px;
-            border-radius: 5px;
-            background-color: #55a8b3;
-            color: white;
-            font-size: 20px;
-
-        }
-
-        .switch-button-off {
-            float: left;
-            margin: 5px;
-            margin-left: 15px;
-        }
-
-        .switch-button-on {
-            float: right;
-            width: 75px;
-            height: 40px;
-            border-radius: 5px;
-            background-color: white;
-            color: #5fc0cd;
-            font-size: 20px;
-            padding: 5px
-        }
-
-        .task6_mark {
-            position: absolute;
-            right: 10px;
-            top: 5px;
-            height: 45px;
-            width: 45px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -7px -4px no-repeat;
-            transform: scale(0.6, 0.6);
-        }
-
-        .task6_home {
-            height: 40px;
-            width: 46px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -159px -8px no-repeat;
-            transform: scale(0.6, 0.6);
-        }
-
-        .task6_person {
-            height: 41px;
-            width: 42px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -107px -7px no-repeat;
-            transform: scale(0.6, 0.6);
-
-        }
-
-        .centercircle {
-            height: 60PX;
-            width: 60px;
-            border-radius: 30px;
-            background-color: #5fc0cd;
-            overflow: hidden;
-        }
-
-        .task6_write {
-            height: 41px;
-            width: 40px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -59px -7px no-repeat;
-            margin-top: 10px;
-            transform: scale(0.6, 0.6);
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .select>li {
-            float: left;
-            width: 100%;
-
-        }
-
-        ul a {
-            display: block;
-            text-decoration: none;
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            color: #999999;
-            background-color: white;
-            border-bottom: 1px solid #e1e5e7;
-            border-right: 1px solid #e1e5e7;
-            border-left: 1px solid #e1e5e7;
-        }
-
-        ul a:hover {
-            text-decoration: none;
-            color: #999999;
-        }
-
-
-
-        .drop-down-content {
-            padding: 0;
-            display: none;
-            /*position: absolute;*/
-        }
-
-        .drop-down-content li:hover a {
-            background-color: gainsboro;
-        }
-
-        .select .drop-down:hover .drop-down-content {
-            display: block;
-        }
-
-        .select-down {
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 8px solid #afbac0;
-
-            float: right;
-            position: absolute;
-            right: 20px;
-            top: 22px;
-        }
-
-        .main {
-            position: absolute;
-            height: calc(100% - 160px);
-            top: 100px;
-            width: 100%;
-overflow-x:auto;
-        }
-
-        .mainrow {
-
-            height: 90px;
-            border-bottom: 1px solid #e1e5e7;
-        }
-
-        .mainTitle {
-            color: #999999;
-            margin-left: 10px;
-            height: 30px;
-            line-height: 30px;
-        }
-
-        .mainMess {
-            color: black;
-            margin-left: 40px;
-            height: 30px;
-            line-height: 30px;
-        }.mainMessL{
-            float: left;
-        }
-        .mainMessR{
-            float: right;
-            color: red;
-        }
-    </style>
 </head>
 
 <body>
@@ -197,115 +20,199 @@ overflow-x:auto;
         <center class="heard">
             <div class="switch">
                 <div class="switch-button-off">
-                    123
+                    找雇主
                 </div>
                 <div class="switch-button-on">
-                    321
+                    找护工
                 </div>
             </div>
 
         </center>
         <div class="task6_mark"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4" style="padding:0">
-                    <ul class="select">
-                        <li class="drop-down">
-                            <a href="#">所在地
-                                <div class="select-down"></div>
-                            </a>
-                            <ul class="drop-down-content">
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4" style="padding:0">
+                <ul class="select">
+                    <li class="drop-down">
+                        <a href="#">所在地
+                            <div class="select-down"></div>
+                        </a>
+                        <ul class="drop-down-content">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
-                </div>
-                <div class="col-xs-4 col-sm-4" style="padding:0">
-                    <ul class="select">
-                        <li class="drop-down">
-                            <a href="#">食宿
-                                <div class="select-down"></div>
-                            </a>
-                            <ul class="drop-down-content">
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-4 col-sm-4" style="padding:0">
-                    <ul class="select">
-                        <li class="drop-down">
-                            <a href="#">病人情况
-                                <div class="select-down"></div>
-                            </a>
-                            <ul class="drop-down-content">
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4" style="padding:0">
+                <ul class="select">
+                    <li class="drop-down">
+                        <a href="#">食宿
+                            <div class="select-down"></div>
+                        </a>
+                        <ul class="drop-down-content">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-4 col-sm-4" style="padding:0">
+                <ul class="select">
+                    <li class="drop-down">
+                        <a href="#">病人情况
+                            <div class="select-down"></div>
+                        </a>
+                        <ul class="drop-down-content">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <div class="main">
         <div class="mainrow">
             <div class="mainTitle">
-                服务日期
+                <div class="task6_calendar"></div> 服务日期
             </div>
             <div class="mainMess">
-                <div class="mainMessL">2015-7-5 至 2015-7-12</div><div class="mainMessR">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
                     25 元/小时
+                    <div class="task6_arrow"></div>
                 </div>
             </div>
             <div class="mainTitle">
-                北京·通州·果园
+                <div class="task6_shape"></div> 北京·通州·果园
             </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
         <div class="mainrow">
-            1
+            <div class="mainTitle">
+                <div class="task6_calendar"></div> 服务日期
+            </div>
+            <div class="mainMess">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
+                    25 元/小时
+                    <div class="task6_arrow"></div>
+                </div>
+            </div>
+            <div class="mainTitle">
+                <div class="task6_shape"></div> 北京·通州·果园
+            </div>
         </div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
