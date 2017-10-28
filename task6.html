@@ -37,7 +37,7 @@
         .switch-button-off {
             float: left;
             margin: 5px;
-            margin-left: 15px;
+            margin-left: 10px;
         }
 
         .switch-button-on {
@@ -47,37 +47,10 @@
             border-radius: 5px;
             background-color: white;
             color: #5fc0cd;
-            font-size: 20px;
             padding: 5px
         }
 
-        .task6_mark {
-            position: absolute;
-            right: 10px;
-            top: 5px;
-            height: 45px;
-            width: 45px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -7px -4px no-repeat;
-            transform: scale(0.6, 0.6);
-        }
-
-        .task6_home {
-            height: 40px;
-            width: 46px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -159px -8px no-repeat;
-            transform: scale(0.6, 0.6);
-        }
-
-        .task6_person {
-            height: 41px;
-            width: 42px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -107px -7px no-repeat;
-            transform: scale(0.6, 0.6);
-
-        }
+        
 
         .centercircle {
             height: 60PX;
@@ -87,14 +60,7 @@
             overflow: hidden;
         }
 
-        .task6_write {
-            height: 41px;
-            width: 40px;
-            overflow: hidden;
-            background: url('./images/Task6_sprite.png') -59px -7px no-repeat;
-            margin-top: 10px;
-            transform: scale(0.6, 0.6);
-        }
+        
 
         ul {
             list-style: none;
@@ -160,7 +126,8 @@
             height: calc(100% - 160px);
             top: 100px;
             width: 100%;
-overflow-x:auto;
+            overflow-x: auto;
+            font-size: 15px
         }
 
         .mainrow {
@@ -181,12 +148,86 @@ overflow-x:auto;
             margin-left: 40px;
             height: 30px;
             line-height: 30px;
-        }.mainMessL{
+        }
+
+        .mainMessL {
             float: left;
         }
-        .mainMessR{
+
+        .mainMessR {
             float: right;
             color: red;
+            margin-right: 10px
+        }
+
+        .task6_calendar {
+            height: 24px;
+            width: 24px;
+            overflow: hidden;
+            float: left;
+            margin-right: 10px;
+            margin-top: 2px;
+            background: url('./images/Task6_sprite.png') -253px -17px no-repeat;
+            transform: scale(0.8, 0.8);
+        }
+
+        .task6_shape {
+            height: 23px;
+            width: 19px;
+            overflow: hidden;
+            float: left;
+            margin-right: 10px;
+            margin-top: 2px;
+            background: url('./images/Task6_sprite.png') -291px -18px no-repeat;
+            transform: scale(0.8, 0.8);
+        }
+
+        .task6_arrow {
+            height: 33px;
+            width: 19px;
+            overflow: hidden;
+            float: right;
+            margin-left: 15px;
+            margin-top: -2px;
+            background: url('./images/Task6_sprite.png') -219px -15px no-repeat;
+            transform: scale(0.7, 0.7);
+
+        }
+
+        .task6_mark {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            height: 45px;
+            width: 45px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -7px -4px no-repeat;
+            transform: scale(0.6, 0.6);
+        }
+
+        .task6_home {
+            height: 40px;
+            width: 46px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -159px -8px no-repeat;
+            transform: scale(0.6, 0.6);
+        }
+
+        .task6_person {
+            height: 41px;
+            width: 42px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -107px -7px no-repeat;
+            transform: scale(0.6, 0.6);
+
+        }
+        .task6_write {
+            height: 41px;
+            width: 40px;
+            overflow: hidden;
+            background: url('./images/Task6_sprite.png') -59px -7px no-repeat;
+            margin-top: 10px;
+            transform: scale(0.6, 0.6);
         }
     </style>
 </head>
@@ -197,10 +238,10 @@ overflow-x:auto;
         <center class="heard">
             <div class="switch">
                 <div class="switch-button-off">
-                    123
+                    找雇主
                 </div>
                 <div class="switch-button-on">
-                    321
+                    找护工
                 </div>
             </div>
 
@@ -275,15 +316,17 @@ overflow-x:auto;
     <div class="main">
         <div class="mainrow">
             <div class="mainTitle">
-                服务日期
+                <div class="task6_calendar"></div> 服务日期
             </div>
             <div class="mainMess">
-                <div class="mainMessL">2015-7-5 至 2015-7-12</div><div class="mainMessR">
+                <div class="mainMessL">2015-7-5 至 2015-7-12</div>
+                <div class="mainMessR">
                     25 元/小时
+                    <div class="task6_arrow"></div>
                 </div>
             </div>
             <div class="mainTitle">
-                北京·通州·果园
+                <div class="task6_shape"></div> 北京·通州·果园
             </div>
         </div>
         <div class="mainrow">
